@@ -1,6 +1,11 @@
 {
   "name": "nextjs-blog",
   "private": true,
+  "scripts": {
+    "build":"next build",
+    "dev":"next dev",
+    "start": "next start"
+  },
   "dependencies": {
     "next": "^12.1.0",
     "react": "^17.0.2",
