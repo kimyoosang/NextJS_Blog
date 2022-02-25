@@ -1,4 +1,4 @@
-import React from "react";
+import Link from 'next/link'
 
 function HomePage() {
   return (
@@ -7,7 +7,9 @@ function HomePage() {
         <nav>
           <ul>
             <li>
-              <a href="/about">About</a>
+              <Link href={'/about'}>
+                <a>About</a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -16,7 +18,7 @@ function HomePage() {
         <h1>My Blog</h1>
       </main>
     </>
-  );
+  )
 }
 
-export default HomePage;
+export default HomePage
