@@ -1,11 +1,16 @@
-import React from 'react'
+import Navbar from '../components/Navbar';
 
 function AboutPage() {
   return (
-    <main>
-      <h1>About</h1>
-    </main>
-  )
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <h1>About</h1>
+      </main>
+    </>
+  );
 }
 
-export default AboutPage
+export default AboutPage;

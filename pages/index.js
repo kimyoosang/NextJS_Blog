@@ -1,24 +1,17 @@
-import Link from 'next/link'
+import Link from 'next/link';
+import Navbar from '../components/Navbar';
 
 function HomePage() {
   return (
     <>
       <header>
-        <nav>
-          <ul>
-            <li>
-              <Link href={'/about'}>
-                <a>About</a>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
       </header>
       <main>
         <h1>My Blog</h1>
       </main>
     </>
-  )
+  );
 }
 
-export default HomePage
+export default HomePage;
