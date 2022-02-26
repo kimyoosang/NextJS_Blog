@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-function Navbar() {
+function NavBar() {
   return (
     <nav>
       <ul>
@@ -15,8 +15,23 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+      <style jsx>{`
+        ul {
+          list-style-type: none;
+          padding: 0;
+        }
+
+        li {
+          display: inline;
+          margin-left: 0.75rem;
+        }
+
+        li:not(:first-child) {
+          margin-left: 0.75rem;
+        }
+      `}</style>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavBar;
