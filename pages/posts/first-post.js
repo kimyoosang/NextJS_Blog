@@ -1,16 +1,14 @@
-import React from 'react';
 import Head from 'next/head';
+import { getPost } from '../../lib/posts';
 
+//1.서버에서 먼저 렌더링
 export async function getStaticProps() {
+  const post = await getPost('first-post');
   return {
-    props: {
-      post: {
-        title: 'First Post',
-        body: 'My first post, as static props',
-      },
-    },
+    props: { post },
   };
 }
+//2.클라이언트에서 렌더링
 function FirstPostPage({ post }) {
   return (
     <>
@@ -19,7 +17,7 @@ function FirstPostPage({ post }) {
       </Head>
       <main>
         <h1>{post.title}</h1>
-        <p>{post.body}</p>
+        <article dangerouslySetInnerHTML={{ __html: post.body }} />
       </main>
     </>
   );
