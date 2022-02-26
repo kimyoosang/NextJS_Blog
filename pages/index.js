@@ -12,9 +12,11 @@ function HomePage() {
       <main>
         <h1>My Blog</h1>
         <ul>
-          <li>One</li>
-          <li>two</li>
-          <li>three</li>
+          <li>
+            <Link href={'/posts/FirstPost'}>
+              <a>First Post</a>
+            </Link>
+          </li>
         </ul>
       </main>
     </>
