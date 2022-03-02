@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import ThemeSwitch from './ThemeSwitch';
-
+//수정
 function NavBar() {
   return (
     <nav>
